@@ -1,9 +1,48 @@
+/*lucide*/
+@import url("https://unpkg.com/lucide-static@latest/font/lucide.css");
+/*devicon*/
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, sans-serif;
+  /**/
 }
 html {
   scroll-behavior: smooth;
+}
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+:root {
+  --bg: #fafaf8;
+  --bg2: #f4f3ef;
+  --white: #ffffff;
+  --border: #e5e3dc;
+  --border2: #d4d1c8;
+  --accent: #5b4fff;
+  --accent-soft: #ece9ff;
+  --accent-mid: #a89dff;
+  --dark: #0f0e17;
+  --dark2: #1c1b27;
+  --text: #2a2835;
+  --muted: #7c7a8e;
+  --muted2: #b0aebe;
+  --green: #00b37e;
+  --cyan: #0ea5e9;
+  --orange: #f97316;
+}
+.levelo-icon {
+  display: inline-block;
+  font-family: 'lucide' !important; /* Required for lucide-static font CDN */
+  font-size: 24px;
+  color: currentColor;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
