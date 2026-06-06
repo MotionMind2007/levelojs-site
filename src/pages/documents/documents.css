@@ -1,0 +1,28 @@
+.docsPage {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.docsBody {
+  display: flex;
+  margin-top: 64px;
+  min-height: calc(100vh - 64px);
+}
+
+.docsMain {
+  flex: 1;
+  padding: 3rem 4rem;
+  max-width: 860px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .docsBody {
+    flex-direction: column;
+  }
+  .docsMain {
+    padding: 1.5rem 1.2rem;
+    max-width: 100%;
+  }
+}

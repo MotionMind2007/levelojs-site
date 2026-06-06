@@ -1,24 +1,110 @@
 .footer {
   background: var(--dark);
-  padding: 2.5rem 3rem;
+  width: 100%;
+}
+
+.footerInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 3rem 3rem;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 4rem;
+}
+
+.footerLogo {
+  margin-bottom: 1rem;
+}
+
+.footerLogoText {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.02em;
+}
+
+.footerLogoText em {
+  font-style: normal;
+  color: var(--accent-mid);
+}
+
+.footerTagline {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.footerSocial {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footerSocialLink {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.footerSocialLink:hover {
+  background: rgba(91,79,255,0.25);
+}
+
+.footerSocialLink .levelo-icon {
+  font-size: 16px;
+  color: rgba(255,255,255,0.5);
+}
+
+.footerCols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footerColTitle {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 1rem;
+}
+
+.footerColLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footerColLinks a {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.35);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footerColLinks a:hover {
+  color: rgba(255,255,255,0.8);
+}
+
+.footerBottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
-  width: 100%;
-}
-
-.footerBrand {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.footerName {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: rgba(255,255,255,0.5);
+  gap: 0.5rem;
 }
 
 .footerCopy {
@@ -26,33 +112,41 @@
   color: rgba(255,255,255,0.25);
 }
 
-.footerLinks {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  flex-wrap: wrap;
+.footerMade {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.25);
 }
 
-.footerLinks a {
-  color: rgba(255,255,255,0.35);
-  text-decoration: none;
-  font-size: 0.8rem;
-  transition: color 0.2s;
+.footerMade em {
+  font-style: normal;
+  color: var(--accent-mid);
 }
 
-.footerLinks a:hover {
-  color: rgba(255,255,255,0.7);
+.footerSocialLink .devicon-github-original,
+.footerSocialLink .devicon-facebook-plain {
+  font-size: 16px;
+  color: rgba(255,255,255,0.5) !important;
+}
+
+.footerSocialLink .levelo-icon {
+  font-size: 16px;
+  color: rgba(255,255,255,0.5);
 }
 
 @media (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 2.5rem 1.2rem;
-    text-align: center;
+  .footerInner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 3rem 1.2rem 2rem;
   }
-  .footerLinks {
-    justify-content: center;
-    gap: 1.2rem;
+  .footerCols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .footerBottom {
+    padding: 1.5rem 1.2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.4rem;
   }
 }

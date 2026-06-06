@@ -6,10 +6,10 @@ export default function CTA() {
       <div class="ctaInner">
         <h2 class="ctaHeading">
           Start building with<br />
-          <em class="ctaEm">Levelo JS</em> today.
+          <em style={{marginRight: '6px'}} class="ctaEm">Levelo JS</em> today.
         </h2>
         <p class="ctaSub">
-          An open-source framework by <strong>Motion Mind</strong> — 
+          An open-source framework by <strong style={{marginLeft: '6px'}}>Motion Mind</strong> — 
           a next-gen tech studio from Bangladesh, building tools for developers everywhere.
         </p>
         <div class="ctaActions">
