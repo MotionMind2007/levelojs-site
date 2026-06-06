@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="https://raw.githubusercontent.com/MotionMind2007/Levelo-Js/main/assets/logo-icon.png" alt="Levelo JS Logo" width="120">
   <h1>Levelo Js</h1>
   <a href="https://lab.motionmind.me"><img alt="Made by Motion Mind" src="https://img.shields.io/badge/MADE%20BY%20Motion%20Mind-000000.svg?style=for-the-badge&labelColor=000"></a>
   <a href="https://github.com/MotionMind2007/Levelo-Js/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-000000.svg?style=for-the-badge&labelColor=000000"></a>
@@ -28,7 +29,7 @@ This repository contains the complete source code for the official Levelo JS web
 
 * **Framework:** Levelo JS (Core Reactive Runtime & Client Router)
 * **Styling:** Scoped CSS Architecture
-* * * **Icons:** Lucide Icons & Devicons (via CDN Integration)
+* **Icons:** Lucide Icons & Devicons (via CDN Integration)
 * **Tooling:** Levelo CLI / Custom Bundler Config
 
 ---
