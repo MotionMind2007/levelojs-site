@@ -44,11 +44,11 @@ Ensure you have levelojs installed on your project.
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/MotionMind2007/levelojs-site](https://github.com/MotionMind2007/levelojs-site)
+git clone https://github.com/MotionMind2007/levelojs-site
 ```
 2. Navigate into the project directory:
 ```sh
-cd levelojs-website
+cd levelojs-site
 ```
 3. Install the dependencies:
 ```sh
@@ -74,7 +74,7 @@ As an open-source project, contributions to the Levelo JS Website are highly enc
 
 ---
 
-[!NOTE]
+> [!NOTE]
 ### Code Style Requirement: 
 To maintain consistency across the Levelo JS ecosystem, all files, code syntax, and comments within this repository must be written in English only.
 
