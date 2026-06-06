@@ -28,6 +28,7 @@ This repository contains the complete source code for the official Levelo JS web
 
 * **Framework:** Levelo JS (Core Reactive Runtime & Client Router)
 * **Styling:** Scoped CSS Architecture
+* * * **Icons:** Lucide Icons & Devicons (via CDN Integration)
 * **Tooling:** Levelo CLI / Custom Bundler Config
 
 ---
@@ -85,4 +86,4 @@ This project is open-source and available under the [MIT](LICENSE) License.
 
 ---
 
-Built with by [Motion Mind](https://lab.motionmind.me)
+Built and maintained by [Motion Mind](https://lab.motionmind.me)
