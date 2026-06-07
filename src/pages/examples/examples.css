@@ -1,0 +1,28 @@
+.examplesPage {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.examplesBody {
+  display: flex;
+  margin-top: 64px;
+  min-height: calc(100vh - 64px);
+}
+
+.examplesMain {
+  flex: 1;
+  padding: 3rem 4rem;
+  max-width: 1000px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .examplesBody {
+    flex-direction: column;
+  }
+  .examplesMain {
+    padding: 1.5rem 1.2rem;
+    max-width: 100%;
+  }
+}
