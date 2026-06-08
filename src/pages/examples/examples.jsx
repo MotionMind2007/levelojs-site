@@ -16,12 +16,11 @@ import FormHandling from './components/content/FormHandling.jsx';
 import './examples.css';
 import { head } from 'levelojs';
 
-head({
-  title: 'Examples — Levelo JS',
-  description: 'Explore real-world examples built with Levelo JS — counters, toggles, forms, routing, and more.',
-});
-
 export default function Examples() {
+  head({
+    title: 'Examples — Levelo JS',
+    description: 'Explore real-world examples built with Levelo JS — counters, toggles, forms, routing, and more.',
+  });
   return (
     <div class="examplesPage">
       <Header />

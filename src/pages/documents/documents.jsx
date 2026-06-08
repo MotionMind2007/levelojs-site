@@ -5,12 +5,11 @@ import DocContent from './components/docContent/docContent.jsx';
 import './documents.css';
 import { head } from 'levelojs';
 
-head({
-  title: 'Documentation — Levelo JS',
-  description: 'Complete documentation for Levelo JS — installation, routing, state, style() API, reactivity, and more.',
-});
-
 export default function Documents() {
+  head({
+    title: 'Documentation — Levelo JS',
+    description: 'Complete documentation for Levelo JS — installation, routing, state, style() API, reactivity, and more.',
+  });
   return (
     <div class="docsPage">
       <Header />
