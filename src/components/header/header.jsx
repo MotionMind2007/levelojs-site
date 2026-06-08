@@ -18,7 +18,6 @@ export default function Header() {
         <div class="headerNav">
           <a href="/documents" class="navLink">Docs</a>
           <a href="/examples" class="navLink">Examples</a>
-          <a href="/roadmap" class="navLink">RoadMap</a>
           <a href="https://github.com/MotionMind2007/Levelo-Js" class="navLink" target="_blank">GitHub</a>
           <a href="/documents" class="navCta">Get Started</a>
         </div>
@@ -40,7 +39,7 @@ export default function Header() {
 
       <aside class={`sidebar ${menuOpen() ? 'sidebarOpen' : ''}`}>
         <div class="sidebarHeader">
-          <a href="/" class="headerBrand">
+          <a onClick={() => setMenuOpen(false)} href="/" class="headerBrand">
             <img class="headerLogo" src={logo} alt="Levelo Js Logo" />
             <span class="headerTitle">Levelo <strong class="headerAccent">Js</strong></span>
           </a>
@@ -56,9 +55,6 @@ export default function Header() {
           <a href="/examples" class="sidebarLink" onClick={() => setMenuOpen(false)}>
             Examples
           </a>
-          <a href="/roadmap" class="sidebarLink" onClick={() => setMenuOpen(false)}>
-            RoadMap
-          </a>
           <a href="https://github.com/MotionMind2007/Levelo-Js" class="sidebarLink" target="_blank">
             GitHub
           </a>
@@ -67,7 +63,7 @@ export default function Header() {
           </a>
         </div>
 
-        <a href="/documents" class="sidebarCta">
+        <a href="/documents" class="sidebarCta" onClick={() => setMenuOpen(false)}>
           Get Started →
         </a>
       </aside>

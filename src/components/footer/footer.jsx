@@ -31,11 +31,9 @@ export default function Footer() {
           <div class="footerCol">
             <h4 class="footerColTitle">Framework</h4>
             <ul class="footerColLinks">
-              <li><a href="/docs">Documentation</a></li>
-              <li><a href="/docs#getting-started">Getting Started</a></li>
-              <li><a href="/docs#api">API Reference</a></li>
+              <li><a href="/documents">Documentation</a></li>
+              <li><a href="/documents">Getting Started</a></li>
               <li><a href="/examples">Examples</a></li>
-              <li><a href="/changelog">Changelog</a></li>
             </ul>
           </div>
 
