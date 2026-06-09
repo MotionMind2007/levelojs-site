@@ -12,7 +12,7 @@ import Footer from '../../components/footer/footer.jsx';
 export default function Home() {
   head({
     title: 'Levelo JS — Zero Runtime, No-VDOM UI Framework',
-    description: "A declarative, zero-runtime UI framework with no Virtual DOM. Engineered for maximum efficiency, predictable state management and lightweight bundles."
+    description: "A declarative, zero-runtime UI framework with no Virtual DOM. Engineered for maximum efficiency, predictable state management and lightweight bundles.",
   });
   return (
     <div>

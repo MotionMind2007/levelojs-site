@@ -2,6 +2,13 @@ import { Pages, Page } from 'levelojs';
 import Home from './pages/home/home.jsx';
 import Documents from './pages/documents/documents.jsx';
 import Examples from './pages/examples/examples.jsx';
+import logo from './assets/logo.svg';
+import { head } from 'levelojs';
+head({
+    link: [
+      { rel: 'icon', type: 'image/png', href: logo }
+    ]
+  })
 
 function Mind() {
   return (

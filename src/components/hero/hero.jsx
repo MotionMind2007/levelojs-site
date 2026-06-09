@@ -55,7 +55,7 @@ export default function Hero() {
         </p>
 
         <div class="actions">
-          <a href="https://github.com/MotionMind2007/Levelo-Js" class="btnFill">
+          <a href="/documents" class="btnFill">
             Get Started →
           </a>
           <a href="#features" class="btnGhost">
@@ -72,7 +72,7 @@ export default function Hero() {
               setCopied(true);
             }}
           >
-            {copied() ? '✓ Copied!' : 'Copy'}
+            {copied() ? 'Copied!' : 'Copy'}
           </button>
         </div>
       </div>
@@ -90,7 +90,7 @@ export default function Hero() {
             </div>
             <div class="browserUrl">
               <span style={{color: 'var(--muted)', fontSize: '0.73rem'}} class="urlLock"><i class="icon-lock"></i></span>
-              localhost:3000
+              localhost:6262
             </div>
             <div class="browserActions">
               <div class="bAction">←</div>
