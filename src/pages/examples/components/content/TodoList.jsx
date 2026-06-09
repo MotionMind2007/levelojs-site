@@ -3,9 +3,8 @@ import CodeBlock from '../../../documents/components/codeBlock/codeBlock.jsx';
 
 const code = `import { state, head } from 'levelojs';
 
-head({ title: 'Todo List — Levelo JS' });
-
 export default function TodoList() {
+  head({ title: 'Todo List — Levelo JS' });
   const [todos, setTodos] = state([]);
 
   const addTodo = () => {

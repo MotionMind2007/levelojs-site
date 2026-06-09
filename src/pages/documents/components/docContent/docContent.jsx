@@ -104,16 +104,19 @@ export default function Home() {
 
 const headCode = `import { head } from 'levelojs';
 
-head({
-  title: 'My Page — My App',
-  description: 'This is my page description.',
-});`;
+export default Home(){
+
+  head({
+    title: 'My Page — My App',
+    description: 'This is my page description.',
+  });
+}`;
+
 
 const stateCode = `import { state } from 'levelojs';
 
-const [count, setCount] = state(0);
-
 export default function Counter() {
+  const [count, setCount] = state(0);
   return (
     <div>
       <p>{count()}</p>
@@ -126,12 +129,12 @@ export default function Counter() {
 
 const computedCode = `import { state, computed } from 'levelojs';
 
-const [price, setPrice] = state(100);
-const [qty, setQty] = state(2);
-
-const total = computed(() => price() * qty());
-
 export default function Cart() {
+  const [price, setPrice] = state(100);
+  const [qty, setQty] = state(2);
+
+  const total = computed(() => price() * qty());
+  
   return (
     <div>
       <p>Total: {total()}</p>
@@ -141,13 +144,13 @@ export default function Cart() {
 
 const effectCode = `import { state, effect } from 'levelojs';
 
-const [count, setCount] = state(0);
-
-effect(() => {
-  console.log('count changed:', count());
-});
-
 export default function App() {
+  const [count, setCount] = state(0);
+
+  effect(() => {
+    console.log('count changed:', count());
+  });
+  
   return (
     <button onClick={() => setCount(count() + 1)}>
       Clicks: {count()}
@@ -600,6 +603,19 @@ export default function DocContent() {
         </div>
       </section>
 
+      <div class="docDivider"></div>
+
+      {/* ─── Important Notice ─── */}
+      <section class="docSection" id="notice">
+        <div class="docCallout">
+          <i class="levelo-icon icon-triangle-alert"></i>
+          <p>
+            All state and hooks in Levelo JS must be declared inside the <strong style={{marginLeft: '5px', marginRight: '5px'}}>main</strong> component function scope. 
+            Declaring them outside will break the lifecycle and result in errors.
+            Utility or helper functions may be defined outside the component, but they cannot contain state or hooks.
+          </p>
+        </div>
+      </section>
     </div>
   )
 }

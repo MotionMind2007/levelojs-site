@@ -4,6 +4,7 @@ import CodeBlock from '../../../documents/components/codeBlock/codeBlock.jsx';
 const code = `import { head } from 'levelojs';
 
 export default function Home() {
+  head({ title: 'hello world' })
   return (
     <div>
       <h1>Hello, Levelo JS!</h1>

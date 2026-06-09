@@ -4,13 +4,14 @@ import { state, effect } from 'levelojs';
 
 const code = `import { state, effect } from 'levelojs';
 
-const [count, setCount] = state(0);
-
-effect(() => {
-  document.title = 'Count: ' + count();
-});
-
 export default function EffectExample() {
+
+  const [count, setCount] = state(0);
+
+  effect(() => {
+    document.title = 'Count: ' + count();
+  });
+
   return (
     <div>
       <h2>effect()</h2>
@@ -23,13 +24,15 @@ export default function EffectExample() {
   )
 }`;
 
-const [count, setCount] = state(0);
 
-effect(() => {
-  document.title = 'Count: ' + count();
-});
 
 export default function EffectExample() {
+  
+  const [count, setCount] = state(0);
+
+  effect(() => {
+    document.title = 'Count: ' + count();
+  });
   return (
     <section class="exSection" id="effect">
       <div class="exBadge">Reactivity</div>

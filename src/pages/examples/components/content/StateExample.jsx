@@ -4,9 +4,10 @@ import { state } from 'levelojs';
 
 const code = `import { state } from 'levelojs';
 
-const [name, setName] = state('');
-
 export default function StateExample() {
+  
+  const [name, setName] = state('');
+  
   return (
     <div>
       <h2>state()</h2>
@@ -22,9 +23,8 @@ export default function StateExample() {
   )
 }`;
 
-const [name, setName] = state('');
-
 export default function StateExample() {
+  const [name, setName] = state('');
   return (
     <section class="exSection" id="state">
       <div class="exBadge">Reactivity</div>

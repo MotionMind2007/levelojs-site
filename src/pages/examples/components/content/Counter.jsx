@@ -4,9 +4,10 @@ import { state } from 'levelojs';
 
 const code = `import { state } from 'levelojs';
 
-const [count, setCount] = state(0);
-
 export default function Counter() {
+
+  const [count, setCount] = state(0);
+  
   return (
     <div>
       <h2>Counter</h2>
@@ -26,9 +27,8 @@ export default function Counter() {
   )
 }`;
 
-const [count, setCount] = state(0);
-
 export default function Counter() {
+  const [count, setCount] = state(0);
   return (
     <section class="exSection" id="counter">
       <div class="exBadge">Basic</div>

@@ -4,12 +4,12 @@ import { state, computed } from 'levelojs';
 
 const code = `import { state, computed } from 'levelojs';
 
-const [price, setPrice] = state(100);
-const [qty, setQty] = state(1);
-
-const total = computed(() => price() * qty());
-
 export default function ComputedExample() {
+  const [price, setPrice] = state(100);
+  const [qty, setQty] = state(1);
+
+  const total = computed(() => price() * qty());
+  
   return (
     <div>
       <h2>computed()</h2>
@@ -30,12 +30,13 @@ export default function ComputedExample() {
   )
 }`;
 
-const [price, setPrice] = state(100);
-const [qty, setQty] = state(1);
 
-const total = computed(() => price() * qty());
 
 export default function ComputedExample() {
+  const [price, setPrice] = state(100);
+  const [qty, setQty] = state(1);
+
+  const total = computed(() => price() * qty());
   return (
     <section class="exSection" id="computed">
       <div class="exBadge">Reactivity</div>
@@ -108,7 +109,7 @@ export default function ComputedExample() {
       </div>
 
       <p class="exNote">
-        <code class="exInlineCode">computed(() => price() * qty())</code> automatically
+        <code class="exInlineCode">{`computed(() => price() * qty())`}</code> automatically
         recalculates whenever <code class="exInlineCode">price()</code> or
         <code class="exInlineCode">qty()</code> changes.
       </p>

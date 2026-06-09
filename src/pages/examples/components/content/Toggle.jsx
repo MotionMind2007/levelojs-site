@@ -4,9 +4,8 @@ import { state } from 'levelojs';
 
 const code = `import { state } from 'levelojs';
 
-const [isOn, setIsOn] = state(false);
-
 export default function Toggle() {
+  const [isOn, setIsOn] = state(false);
   return (
     <div>
       <h2>Toggle</h2>
@@ -29,9 +28,9 @@ export default function Toggle() {
   )
 }`;
 
-const [isOn, setIsOn] = state(false);
 
 export default function Toggle() {
+  const [isOn, setIsOn] = state(false);
   return (
     <section class="exSection" id="toggle">
       <div class="exBadge">Basic</div>

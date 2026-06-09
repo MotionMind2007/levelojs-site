@@ -4,9 +4,8 @@ import { state } from 'levelojs';
 
 const code = `import { state, head } from 'levelojs';
 
-head({ title: 'Form Handling — Levelo JS' });
-
 export default function FormHandling() {
+  head({ title: 'Form Handling — Levelo JS' });
   const [submitted, setSubmitted] = state(false);
   const [data, setData] = state({ name: '', email: '', message: '' });
 

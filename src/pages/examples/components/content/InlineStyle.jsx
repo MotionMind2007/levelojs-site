@@ -4,11 +4,11 @@ import { state } from 'levelojs';
 
 const code = `import { state } from 'levelojs';
 
-const [active, setActive] = state(0);
-
-const tabs = ['Home', 'About', 'Contact'];
-
 export default function InlineStyle() {
+  const [active, setActive] = state(0);
+
+  const tabs = ['Home', 'About', 'Contact'];
+  
   return (
     <div>
       <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem' }}>
@@ -42,10 +42,9 @@ export default function InlineStyle() {
   )
 }`;
 
-const [active, setActive] = state(0);
-const tabs = ['Home', 'About', 'Contact'];
-
 export default function InlineStyle() {
+  const [active, setActive] = state(0);
+  const tabs = ['Home', 'About', 'Contact'];
   return (
     <section class="exSection" id="inline-style">
       <div class="exBadge">Styling</div>
