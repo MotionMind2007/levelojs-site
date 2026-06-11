@@ -17,6 +17,6 @@
     "vite": "^8.0.14"
   },
   "dependencies": {
-    "levelojs": "^1.0.1"
+    "levelojs": "^1.2.1"
   }
 }
