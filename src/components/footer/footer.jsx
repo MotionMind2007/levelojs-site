@@ -20,7 +20,7 @@ export default function Footer() {
             <a href="https://www.facebook.com/share/g/17ejwCuPRk/" class="footerSocialLink" target="_blank">
               <i class="devicon-facebook-plain"></i>
             </a>
-            <a href="https://motionmind.me" class="footerSocialLink" target="_blank">
+            <a href="https://lab.motionmind.me" class="footerSocialLink" target="_blank">
               <i class="levelo-icon icon-globe"></i>
             </a>
           </div>

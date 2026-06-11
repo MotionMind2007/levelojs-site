@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://levelojs.motionmind.me/sitemap.xml

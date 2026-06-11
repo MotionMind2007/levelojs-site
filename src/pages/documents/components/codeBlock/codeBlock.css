@@ -63,6 +63,30 @@
   -webkit-overflow-scrolling: touch;
 }
 
+/* Chrome, Edge, Brave, Opera */
+
+.codeBlock::-webkit-scrollbar,
+.codeBlockBody::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.codeBlock::-webkit-scrollbar-track,
+.codeBlockBody::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.codeBlock::-webkit-scrollbar-thumb,
+.codeBlockBody::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.22);
+  border-radius: 999px;
+}
+
+.codeBlock::-webkit-scrollbar-thumb:hover,
+.codeBlockBody::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.22);
+}
+
 .cbLine {
   display: flex;
   gap: 1rem;
