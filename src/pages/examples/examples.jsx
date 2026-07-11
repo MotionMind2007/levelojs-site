@@ -7,6 +7,8 @@ import Toggle from './components/content/Toggle.jsx';
 import StateExample from './components/content/StateExample.jsx';
 import ComputedExample from './components/content/ComputedExample.jsx';
 import EffectExample from './components/content/EffectExample.jsx';
+import CleanupExample from './components/content/cleanupExample.jsx';
+import MountExample from './components/content/mountExample.jsx';
 import StyleApi from './components/content/StyleApi.jsx';
 import FileCss from './components/content/FileCss.jsx';
 import InlineStyle from './components/content/InlineStyle.jsx';
@@ -33,6 +35,8 @@ export default function Examples() {
           <StateExample />
           <ComputedExample />
           <EffectExample />
+          <CleanupExample />
+          <MountExample />
           <StyleApi />
           <FileCss />
           <InlineStyle />

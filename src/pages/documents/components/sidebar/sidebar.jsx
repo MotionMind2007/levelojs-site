@@ -35,6 +35,13 @@ const sections = [
     ]
   },
   {
+    title: 'Lifecycle Hooks',
+    items: [
+      { label: 'cleanup()', href: '#cleanup' },
+      { label: 'mount()', href: '#mount' },
+    ]
+  },
+  {
     title: 'Advanced',
     items: [
       { label: 'Assets & Images', href: '#assets' },

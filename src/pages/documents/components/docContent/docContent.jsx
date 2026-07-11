@@ -158,6 +158,48 @@ export default function App() {
   )
 }`;
 
+const cleanupCode = `import { state, effect, cleanup } from 'levelojs';
+
+export default function LiveTimer() {
+  const [seconds, setSeconds] = state(0);
+
+  effect(() => {
+    const interval = setInterval(() => {
+      setSeconds(seconds() + 1);
+    }, 1000);
+
+    // Automatically clear interval when the page transitions
+    cleanup(() => {
+      clearInterval(interval);
+    });
+  });
+
+  return (
+    <div>
+      <p>Time spent on page: {() => seconds()}s</p>
+    </div>
+  );
+}`
+
+const mountCode = `import { state, mount } from 'levelojs';
+
+export default function UserProfile() {
+  const [user, setUser] = state(null);
+
+  mount(() => {
+    // Safely fetch data after component is painted
+    fetch('[https://api.github.com/users/MotionMind2007](https://api.github.com/users/MotionMind2007)')
+      .then(res => res.json())
+      .then(data => setUser(data));
+  });
+
+  return (
+    <div>
+      {() => user() ? <p>Hello, {user().name}</p> : <p>Loading...</p>}
+    </div>
+  );
+}`;
+
 const routingCode = `import { Pages, Page } from 'levelojs';
 import Home from './pages/home.jsx';
 import About from './pages/about.jsx';
@@ -510,6 +552,30 @@ export default function DocContent() {
           its reactive dependencies change. Use it for logging, fetching data, or DOM manipulation.
         </p>
         <CodeBlock filename="pages/app.jsx" code={effectCode} />
+      </section>
+
+      <div class="docDivider"></div>
+
+      <section class="docSection" id="cleanup">
+        <h2 class="docH2">cleanup()</h2>
+        <p class="docP">
+          <code class="docInlineCode">cleanup()</code> registers a callback that executes immediately 
+          before the current reactive scope is destroyed or torn down (e.g., during a route change or when a conditional element unmounts). 
+          Use it to wipe out intervals, clear event listeners, and prevent memory leaks.
+        </p>
+        <CodeBlock filename="pages/app.jsx" code={cleanupCode} />
+      </section>
+
+      <div class="docDivider"></div>
+
+      <section class="docSection" id="mount">
+        <h2 class="docH2">mount()</h2>
+        <p class="docP">
+          <code class="docInlineCode">mount()</code> schedules a task to run precisely after the framework has rendered 
+          the component and the browser has finished painting the synchronous layout. 
+          It is ideal for DOM manipulation, initializing third-party libraries, or fetching data on load.
+        </p>
+        <CodeBlock filename="pages/app.jsx" code={mountCode} />
       </section>
 
       <div class="docDivider"></div>

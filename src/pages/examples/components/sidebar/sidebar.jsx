@@ -19,6 +19,13 @@ const sections = [
     ]
   },
   {
+    title: 'Lifecycle Hooks',
+    items: [
+      { label: 'cleanup()', href: '#cleanup' },
+      { label: 'mount()', href: '#mount' },
+    ]
+  },
+  {
     title: 'Styling',
     items: [
       { label: 'style() API', href: '#style-api' },
