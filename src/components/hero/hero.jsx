@@ -40,7 +40,7 @@ export default function Hero() {
       <div class="heroContent">
         <div class="badge">
           <span class="badgeDot"></span>
-          Beta · v1.0.4 · Zero-Runtime
+          Beta · v2 · Zero Virtual DOM Overhead
         </div>
 
         <h1 class="heading">
@@ -49,9 +49,8 @@ export default function Hero() {
         </h1>
 
         <p class="sub">
-          A declarative, zero-runtime UI framework with no Virtual DOM —
-          engineered for maximum efficiency, predictable state management,
-          and lightweight bundles by <h4 style={{ color: 'var(--accent)', marginLeft: '6px' }}>Motion Mind.</h4>
+          Levelo JS is a lightweight, ultra-fast reactive JavaScript framework built for speed and simplicity. 
+          No Virtual DOM. Direct Real DOM. Powered by <h4 style={{ color: 'var(--accent)', marginLeft: '6px' }}>Motion Mind.</h4>
         </p>
 
         <div class="actions">
