@@ -10,18 +10,29 @@ export default function Footer() {
             <span class="footerLogoText">Levelo <em>Js</em></span>
           </div>
           <p class="footerTagline">
-            A declarative, zero-runtime UI framework.<br />
-            Open-source. Built by Motion Mind.
+            A declarative, zero-runtime overhead UI framework.<br />
+            Open-source. Built by Motion Mind X.
           </p>
           <div class="footerSocial">
-            <a href="https://github.com/MotionMind2007/Levelo-Js" class="footerSocialLink" target="_blank">
+            <a
+              href="https://github.com/MotionMind2007/Levelo-Js"
+              class="footerSocialLink"
+              target="_blank"
+              rel="noopener noreferrer"
+              ariaLabel="Levelo JS on GitHub"
+              title="GitHub"
+            >
               <i class="devicon-github-original"></i>
             </a>
-            <a href="https://www.facebook.com/share/g/17ejwCuPRk/" class="footerSocialLink" target="_blank">
-              <i class="devicon-facebook-plain"></i>
-            </a>
-            <a href="https://lab.motionmind.me" class="footerSocialLink" target="_blank">
-              <i class="levelo-icon icon-globe"></i>
+            <a
+              href="https://www.npmjs.com/package/levelojs"
+              class="footerSocialLink"
+              target="_blank"
+              rel="noopener noreferrer"
+              ariaLabel="levelojs on npm"
+              title="npm"
+            >
+              <i class="devicon-npm-original-wordmark"></i>
             </a>
           </div>
         </div>
@@ -34,25 +45,23 @@ export default function Footer() {
               <li><a href="/documents">Documentation</a></li>
               <li><a href="/documents">Getting Started</a></li>
               <li><a href="/examples">Examples</a></li>
+              <li><a href="https://www.npmjs.com/package/create-levelo-app" target="_blank" rel="noopener noreferrer">create-levelo-app</a></li>
             </ul>
           </div>
 
           <div class="footerCol">
             <h4 class="footerColTitle">Community</h4>
             <ul class="footerColLinks">
-              <li><a href="https://github.com/MotionMind2007/Levelo-Js" target="_blank">GitHub</a></li>
-              <li><a href="https://github.com/MotionMind2007/Levelo-Js/issues" target="_blank">Report an Issue</a></li>
-              <li><a href="https://github.com/MotionMind2007/Levelo-Js/discussions" target="_blank">Discussions</a></li>
-              <li><a href="https://www.facebook.com/share/g/17ejwCuPRk/" target="_blank">Facebook Group</a></li>
+              <li><a href="https://github.com/MotionMind2007/Levelo-Js" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://github.com/MotionMind2007/Levelo-Js/issues" target="_blank" rel="noopener noreferrer">Report an Issue</a></li>
+              <li><a href="https://github.com/MotionMind2007/Levelo-Js/discussions" target="_blank" rel="noopener noreferrer">Discussions</a></li>
             </ul>
           </div>
 
           <div class="footerCol">
-            <h4 class="footerColTitle">Motion Mind</h4>
+            <h4 class="footerColTitle">Motion Mind X</h4>
             <ul class="footerColLinks">
-              <li><a href="https://motionmind.me" target="_blank">Website</a></li>
-              <li><a href="https://lab.motionmind.me" target="_blank">Lab</a></li>
-              <li><a href="https://www.npmjs.com/package/create-levelo-app" target="_blank">npm</a></li>
+              <li><a href="https://motionmindx.com" target="_blank" rel="noopener noreferrer">Website ↗</a></li>
             </ul>
           </div>
 
@@ -61,8 +70,8 @@ export default function Footer() {
       </div>
 
       <div class="footerBottom">
-        <p class="footerCopy">© 2026 Motion Mind · MIT License</p>
-        <p class="footerMade">Made with <em style={{marginLeft: '6px'}}>Levelo JS</em> ·  <em style={{color: '#C5C5C5'}}>Bangladesh 🇧🇩</em></p>
+        <p class="footerCopy">© 2026 Motion Mind X · MIT License</p>
+        <p class="footerMade">Made with <em style={{ marginLeft: '6px' }}>Levelo JS</em> · <em style={{ color: '#C5C5C5' }}>Bangladesh 🇧🇩</em></p>
       </div>
 
     </footer>
